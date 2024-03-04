@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     env_file:
       - New_Project/docker.env
+    volumes:
+      - .:/srv/app
     command: python manage.py runserver
 
 
